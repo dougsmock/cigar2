@@ -1,6 +1,6 @@
-def string_draw_numbers()
+def draw_numbers()
   numbers = []
-    (0..3).each do |drawing|
+    (0..3).each do
       drawing = rand(10).to_s
       numbers << drawing
     end
@@ -8,13 +8,13 @@ def string_draw_numbers()
     official_result
 end
 
-def array_buy_tickets()
+def tickets_bought()
   random_ticket = []
   (0.999).each do
     digits = []
-    (0..3).each do |digits|
+    (0..3).each do
       i = 0
-      digits(i) = rand(10).to_s
+      digits[i] = rand(10).to_s
       i += 1
     end
     random_ticket = digits[0] + digits[1] + digits[2] + digits[3]
