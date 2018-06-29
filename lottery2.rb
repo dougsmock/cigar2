@@ -8,15 +8,27 @@ def string_draw_numbers()
     official_result
 end
 
-def array_buy_ducats(numbers, guesses)
-  guesses = []
+def array_buy_tickets()
   random_ticket = []
   (0.999).each do
+    digits = []
     (0..3).each do |digits|
-      digits = rand(10).to_s
-      guesses << digits
+      i = 0
+      digits(i) = rand(10).to_s
+      i += 1
     end
-    random_ticket = guesses[0] + guesses[1] + guesses[2] + guesses[3]
+    random_ticket = digits[0] + digits[1] + digits[2] + digits[3]
   end
   random_ticket
 end
+
+
+#introduce guesses array
+# introduce random-ticket array.
+# generate first digit
+# generate second digit
+# generate third digit
+# generate fourth digit
+# concatenate digits
+# shovel 4-digit number into random_ticket array.
+# clean out digit array do another drawing.
